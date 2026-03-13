@@ -22,7 +22,7 @@ func Load() Config {
 	v.AutomaticEnv()
 
 	v.SetDefault("HTTP_ADDR", ":8080")
-	v.SetDefault("CLOUD_WS_URL", "ws://localhost:9090/ws/cloud")
+	v.SetDefault("CLOUD_WS_URL", "ws://localhost:9090/ws/ingest")
 	v.SetDefault("BUFFER_SIZE", 10000)
 	v.SetDefault("RECONNECT_DELAY", "3s")
 	v.SetDefault("FLUSH_INTERVAL", "1s")
